@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这段话送给你了</title>
+ 
+    <link rel="stylesheet" type="text/css" href="pc.css"/>
+ 	
+ 	 
+</head>
+<body id="item1">
+
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script>
+
+		$(function(){
+        //判断是否是手机
+        var mobile_flag = isMobile();
+        //alert(mobile_flag);
+        if(mobile_flag){
+    var css = document.createElement('link');
+    css.href="mobile.css";
+    css.rel="stylesheet";
+    css.type="text/css";
+    document.getElementsByTagName('head')[0].appendChild(css);
+        }else{
+                
+                var link = document.getElementsByTagName('link')[0];
+              link.setAttribute('href','pc.css');
+        }
+    })
+				function isMobile() {
+            var userAgentInfo = navigator.userAgent;
+ 
+            var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
+ 
+            var mobile_flag = false;
+ 
+            //根据userAgent判断是否是手机
+            for (var v = 0; v < mobileAgents.length; v++) {
+                if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+                    mobile_flag = true;
+                    break;
+                }
+            }
+             var screen_width = window.screen.width;
+             var screen_height = window.screen.height;   
+ 
+             //根据屏幕分辨率判断是否是手机
+             if(screen_width < 500 && screen_height < 800){
+                 mobile_flag = true;
+             }
+ 
+             return mobile_flag;
+        }
+	</script>
+<audio autoplay="autoplay"  loop="loop" preload="auto">
+<source src="music.mp3" type="audio/mpeg">
+</audio>	
+    <div class="item" id="item">
+    	<h3 style="text-align: center;">I wish you're a lucky girl</h3>
+    	 <marquee direction="up" onMouseOver="this.stop(15)" onMouseOut="this.start()" height="500px;">
+                <p>
+不知何时你才会重新点开这个网页,
+<br>
+也不知何时你才会发现这里悄然发生了变化。
+<br>
+不过当你发现这里发生变化时，
+<br>
+我想我已经开始了新的旅程了。
+<br>
+这注定是一场只有开始没有结局的故事。
+<br>
+不要因为一时的感动冲动，错过了那个真正爱你的人。
+</p>
+<p>你可能只是这个世界上的一个人，
+<br>但对于某些人来说，你就是全世界。</p>
+<br>
+最后祝你前程似锦！
+        <p>
+            [一见钟情]以及[从一而终]的感情是不切实际的，<br>
+            我们需要的不是这种不切实际而虚幻的感情。<br>
+            有人形容跟异性交往，<br>
+            就好像在海边捡石头，大家都会捡喜欢的那一颗。<br>
+            一但捡到一颗你最喜欢的石头，便把它带回家去，<br>
+            好好对待它，因为那是你唯一的石头。<br>
+            而且要记住，从此后不要再到海边去。<br>
+            永远相信，<br>
+            我已经找到最大、最美、最适合我的那一颗。<br>
+        </p>
+<br><br><br>
+2020.8.30
+<br><p>
+憨憨还是没有发现，这里已经发生了变化。😂
+<br>
+今天那个那个答案是  1089 没有啥特殊意义，就是一个数乘以9的逆序列是它本身。我是用程序跑出来的。😂祝你考试顺利！
+<br><br>
+<p>
+2020.8.31
+<br>
+又是元气满满的一天，不过好像有点冷了。
+今天憨憨考试了！
+<br>
+居然套路我，还占我便宜，不会是抖音快手学滴吧？
+<br>
+越来越像精神小妹了😢。
+<br><br>
+<p>
+2020.9.1
+<br>
+今天是九月的第一天，一天这么快就结束了，感觉好累啊！
+<br>
+也不知这个能坚持写多久...
+<br><br>
+<p>
+2020.9.2<br>
+本月的第二天，今天的面怎么这么辣，要被辣哭辽，
+
+天气也变热了，又是摸鱼的一天。ヽ( ⌒ω⌒)人(=^‥^= )ﾉ
+<br><br>
+<p>
+2020.9.3
+<br>
+憨憨考试今天的结束了。
+<br><br>
+<p>
+2020.9.4
+<br>
+消失的一天....
+<br><br>
+<p>
+2020.9.5
+<br>
+一天一个小套路被安排的明明白白。
+        </marquee>
+       <h5 style="text-align: center;">no one likes change unless she feels pain</h5>
+
+    </div>
+
+</body>
+</html>
